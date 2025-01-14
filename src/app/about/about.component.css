@@ -1,0 +1,34 @@
+.container-fluid {
+    padding-block: 8rem;
+    background-color: #1abc9c;
+}
+
+.about-title {
+    padding-block: 1rem;
+    color: #fff;
+}
+
+.about-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+}
+
+.about-title h2::after {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #fff;
+    width: 25%;
+    bottom: -50%;
+    right: 20%;
+}
+
+.about-title h2::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #fff;
+    width: 25%;
+    bottom: -50%;
+    left: 20%;
+}

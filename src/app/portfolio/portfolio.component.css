@@ -1,0 +1,60 @@
+.portfolio-title {
+    padding-block: 1rem;
+    color: #2c3e50;
+}
+
+.portfolio-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    position: relative;
+}
+
+.portfolio-title h2::after {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #2c3e50;
+    width: 10%;
+    bottom: -50%;
+    right: 38%;
+}
+
+.portfolio-title h2::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #2c3e50;
+    width: 10%;
+    bottom: -50%;
+    left: 38%;
+}
+.card {
+    position: relative;
+}
+
+.card::after {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover::after {
+    background-color: rgba(28, 184, 160, 0.9);
+    content: "\f067";
+    font-size: 3rem;
+    color: white;
+}
+.modal {
+    background-color: rgba(48, 74, 125, 0.8);
+}
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
